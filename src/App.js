@@ -1,8 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React,  {useState} from "react";
+import TodoList from "./TodoList";
 
 function App() {
-  return null
+   useState([])
+  return (
+    <>
+      <TodoList />
+      <input type="text" />
+      <button>Add to do</button>
+      <button>Clear</button>
+      <div>Ready</div>
+    </>
+  )
 }
 
 export default App;
